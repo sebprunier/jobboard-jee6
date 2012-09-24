@@ -26,29 +26,12 @@
 	</build>
 
 	<dependencies>
-		<!-- Java EE 6 - Web Profile -->
+		<!-- Java EE 6 -->
 		<dependency>
 			<groupId>javax</groupId>
 			<artifactId>javaee-web-api</artifactId>
 			<version>6.0</version>
 			<scope>provided</scope>
-		</dependency>
-
-		<!-- Jax-RS - Jersey -->
-		<dependency>
-			<groupId>com.sun.jersey</groupId>
-			<artifactId>jersey-core</artifactId>
-			<version>1.14</version>
-		</dependency>
-		<dependency>
-			<groupId>com.sun.jersey</groupId>
-			<artifactId>jersey-server</artifactId>
-			<version>1.14</version>
-		</dependency>
-		<dependency>
-			<groupId>com.sun.jersey</groupId>
-			<artifactId>jersey-servlet</artifactId>
-			<version>1.14</version>
 		</dependency>
 
 	</dependencies>
