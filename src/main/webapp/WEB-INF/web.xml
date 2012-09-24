@@ -6,14 +6,8 @@
 
 	<display-name>jobboard-jee6</display-name>
 
-	<servlet>
-		<servlet-name>jax-rs</servlet-name>
-		<servlet-class>javax.ws.rs.core.Application</servlet-class>
-		<load-on-startup>1</load-on-startup>
-	</servlet>
-
 	<servlet-mapping>
-		<servlet-name>jax-rs</servlet-name>
+		<servlet-name>javax.ws.rs.core.Application</servlet-name>
 		<url-pattern>/resources/*</url-pattern>
 	</servlet-mapping>
 
