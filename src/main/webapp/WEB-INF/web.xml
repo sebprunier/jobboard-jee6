@@ -6,11 +6,6 @@
 
 	<display-name>jobboard-jee6</display-name>
 
-	<servlet-mapping>
-		<servlet-name>javax.ws.rs.core.Application</servlet-name>
-		<url-pattern>/resources/*</url-pattern>
-	</servlet-mapping>
-
 	<welcome-file-list>
 		<welcome-file>index.html</welcome-file>
 	</welcome-file-list>
