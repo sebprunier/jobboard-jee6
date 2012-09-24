@@ -22,8 +22,8 @@ public class JobServiceRest {
 		Job job2 = new Job();
 		job2.setId(2L);
 		job2.setTitle("Job 2");
-		jobs[1] = job1;
-		jobs[2] = job2;
+		jobs[0] = job1;
+		jobs[1] = job2;
 
 		// Return mocks
 		return Response.ok(jobs).build();
