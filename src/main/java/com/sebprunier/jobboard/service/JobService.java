@@ -12,7 +12,7 @@ import com.sebprunier.jobboard.model.Job;
 @Stateless
 public class JobService {
 
-	@PersistenceContext(unitName = "jobboard-jee6")
+	@PersistenceContext(unitName = "jobboardPU")
 	private EntityManager em;
 
 	public List<Job> getAllJobs() {
