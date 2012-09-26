@@ -3,15 +3,15 @@
 	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
 
 	<persistence-unit name="jobboardPU" transaction-type="JTA">
+		<provider>org.hibernate.ejb.HibernatePersistence</provider>
 
-		<jta-data-source>java:jboss/datasources/ExampleDS</jta-data-source>
+		<jta-data-source>jdbc/jobboard</jta-data-source>
 
 		<class>com.sebprunier.jobboard.model.Job</class>
 
 		<properties>
-			<property name="hibernate.dialect" value="org.hibernate.dialect.H2Dialect" />
-			<property name="hibernate.hbm2ddl.auto" value="create-drop" />
-			<property name="hibernate.showSql" value="true" />
+			<property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5Dialect" />
+			<property name="hibernate.show_sql" value="true" />
 		</properties>
 
 	</persistence-unit>
