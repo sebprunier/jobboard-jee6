@@ -2,16 +2,14 @@
 <persistence version="2.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
 
-	<persistence-unit name="jobboardPU" transaction-type="JTA">
-		<provider>org.hibernate.ejb.HibernatePersistence</provider>
-
-		<jta-data-source>jdbc/jobboard</jta-data-source>
+	<persistence-unit name="jobboardPU">
+		<jta-data-source>java:/jdbc/jobboard</jta-data-source>
 
 		<class>com.sebprunier.jobboard.model.Job</class>
 
 		<properties>
-			<property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5Dialect" />
-			<property name="hibernate.show_sql" value="true" />
+			<property name="hibernate.show_sql" value="false" />
+			<property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect" />
 		</properties>
 
 	</persistence-unit>
